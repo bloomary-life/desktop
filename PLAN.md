@@ -46,7 +46,7 @@ bloomary/desktop/
 linkedIn.callbackURLScheme `bloomary`, storage.draftsKey `bloomary_drafts`,
 storage.linkedInTokenKey `bloomary_linkedin_token`, observability (sentryDSN,
 sentryEnvironment `production`, sentryTracesSampleRate 0.1, telemetryDeckAppID
-`5BC98248-6BB2-4B83-AB26-308C92836215`, telemetryDeckNamespace `eu.dailymind`).
+(set at release build, not in this repo), telemetryDeckNamespace `eu.dailymind`).
 Observability section optional → disabled. Missing/invalid plist → fatalError.
 
 `Info.plist`: display name "Bloomary", URL type with scheme `bloomary`
