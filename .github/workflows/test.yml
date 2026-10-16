@@ -1,0 +1,17 @@
+name: test
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  test:
+    name: test
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v7
+      - run: xcodebuild test -project 'Bloomary Desktop.xcodeproj' -scheme 'Bloomary Desktop' -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO
+      - name: Trace check
+        if: hashFiles('REQUIREMENTS.md') != ''
+        run: bash scripts/trace-check.sh REQUIREMENTS.md 'Bloomary DesktopTests'
