@@ -1,0 +1,24 @@
+{
+  "originHash" : "d6bb9901b5d4ad02b54d9762b8bb25529d84e68655e21902132e7808464a997e",
+  "pins" : [
+    {
+      "identity" : "sentry-cocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/getsentry/sentry-cocoa.git",
+      "state" : {
+        "revision" : "a00a9784fff7193cbb0f9fae509fec8107e07744",
+        "version" : "9.26.1"
+      }
+    },
+    {
+      "identity" : "swiftsdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TelemetryDeck/SwiftSDK.git",
+      "state" : {
+        "revision" : "58f436299d3f6710bcedc18aff26480aaf1879fc",
+        "version" : "2.14.2"
+      }
+    }
+  ],
+  "version" : 3
+}
